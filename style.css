@@ -1,0 +1,1996 @@
+@font-face {
+    font-family: Volvo Broad;
+    src: url('VolvoBroad.ttf');
+}
+
+@font-face {
+    font-family: Volvo Novum;
+    src: url('fonnts.com-Volvo_Novum_Light.ttf');
+}
+
+@font-face {
+    font-family: Volvo Novum M;
+    src: url('fonnts.com-Volvo_Novum_Medium.ttf');
+}
+
+
+
+.bigdiv {
+    display: block;
+    /* WAS display: flex - This is the main culprit */
+    width: 100%;
+    /* flex-direction: column;  <-- Remove this */
+    overflow-x: hidden;
+    /* innovative safety precaution */
+}
+
+/* --- NAV SECTION --- */
+.navsection {
+    position: absolute;
+    width: 100%;
+    padding: 20px 0;
+    z-index: 100;
+}
+
+.navcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navmenu {
+    display: flex;
+    gap: 131px;
+    padding: 15px 80px;
+    border-radius: 60px;
+    border: 1px solid rgba(255, 255, 255, 0.34);
+    background: linear-gradient(87deg, rgba(255, 255, 255, 0.16) -12.14%, rgba(30, 144, 255, 0.16) 126.75%);
+    backdrop-filter: blur(5px);
+}
+
+.navlink,
+.navlink2,
+.navlink3,
+.navlink4 {
+    font-family: Volvo Broad;
+    font-size: 24px;
+    color: #C0C0C0;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.navactive {
+    color: #000;
+
+}
+
+/* --- HERO SECTION --- */
+.herosection {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(65deg, #D1D5DB 34.8%, transparent 35%) top left / 100% 50% no-repeat, linear-gradient(295deg, transparent 65%, #D1D5DB 65.2%) bottom left / 100% 50% no-repeat, #111111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 80px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.herocontainer {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.herocontent {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 40%;
+}
+
+.herotitle {
+    font-family: Volvo Broad;
+    font-size: 96px;
+    color: #000;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 0.9;
+}
+
+.herodesc {
+    font-family: Volvo Novum;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    max-width: 400px;
+}
+
+.herobuttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.herobtn1 {
+    padding: 12px 30px;
+    background: #000;
+    color: #FFF;
+    border: none;
+    border-radius: 20px;
+    font-family: Volvo Novum M;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 12px;
+    transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1), background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.herobtn1:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.herobtn2 {
+    padding: 12px 30px;
+    background: transparent;
+    color: #000;
+    border-radius: 37px;
+    border: 1px solid rgba(255, 255, 255, 0.39);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12);
+    font-family: Volvo Novum M;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 12px;
+    transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1), background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.herobtn2:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.herovisual {
+    width: 363px;
+    height: 905px;
+    position: relative;
+    right: 5%;
+    top: 100px;
+}
+
+.car-top-view {
+    width: 100%;
+    height: 100%;
+    background-image: url('https://placehold.co/250x500/111/333?text=Top+View');
+    background-size: cover;
+    border-radius: 40px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+.herostats {
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+    width: 28%;
+}
+
+.statitem {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.statheader {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.statlabel,
+.statlabel2,
+.statlabel3 {
+    font-family: Volvo Broad;
+    font-size: 32px;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.statval,
+.statval2,
+.statval3 {
+    font-family: Volvo Broad;
+    font-size: 32px;
+    color: #FFF;
+    font-weight: 700;
+}
+
+.statbar {
+    width: 100%;
+    height: 32px;
+    background: #333;
+    border-radius: 37px;
+    background: linear-gradient(87deg, rgba(255, 255, 255, 0.16) -12.14%, rgba(30, 144, 255, 0.16) 126.75%);
+}
+
+.statfill {
+    height: 100%;
+    background: #FFF;
+    border-radius: 37px;
+    box-shadow: 98px 0 27px 0 rgba(0, 0, 0, 0.02), 63px 0 25px 0 rgba(0, 0, 0, 0.15), 35px 0 21px 0 rgba(0, 0, 0, 0.50), 16px 0 16px 0 rgba(0, 0, 0, 0.85), 4px 0 9px 0 rgba(0, 0, 0, 0.98);
+}
+
+/* --- BANNER --- */
+.bannersection {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.bannerimage {
+    position: absolute;
+    inset: 0;
+    height: 160%;
+    background-image: url('photo-1629897048514-3dd7414fe72a.jpeg');
+    background-size: cover;
+    background-position: center;
+    will-change: transform;
+    filter: grayscale(100%) contrast(1.1);
+}
+
+
+/* --- SAFETY SECTION --- */
+.safetysection {
+    width: 100%;
+    height: 100vh;
+    /* Must be viewport height */
+    background: #000;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    /* Helps GSAP context */
+}
+
+
+/* .safetycontainer {
+    overflow: hidden;
+  } */
+
+.safety-wrapper {
+    display: flex;
+    width: 400vw;
+    /* 4 panels */
+}
+
+.safetypanel {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    box-sizing: border-box;
+    color: white;
+}
+
+
+.safetytitle {
+    font-family: Volvo Broad;
+    font-size: 80px;
+    color: #FFF;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 0.9;
+}
+
+.safetytitle2 {
+    font-family: Volvo Broad;
+    font-size: 40px;
+    color: #FFF;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.safetydesc {
+    font-family: Volvo Novum;
+    font-size: 14px;
+    color: #999;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* --- FUTURE SECTION --- */
+.futuresection {
+    width: 100%;
+    background: #D8D8D8;
+    padding: 80px 80px 60px 80px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: visible;
+}
+
+.futurecontainer {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.futuretop {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+}
+
+.futurecontent {
+    width: 45%;
+    padding-top: 20px;
+}
+
+.futuretitle {
+    font-family: Volvo Broad;
+    font-size: 56px;
+    color: #000;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 24px;
+}
+
+.futuredesc {
+    font-family: Volvo Novum;
+    font-size: 20px;
+    color: #444;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.futurecar {
+    position: absolute;
+    top: 10%;
+    width: 979px;
+    height: 464px;
+}
+
+.futurebuttons {
+    display: flex;
+    gap: 12px;
+}
+
+.futurebtn1 {
+    padding: 12px 28px;
+    background: #1a1a1a;
+    color: #FFF;
+    border: none;
+    border-radius: 25px;
+    font-family: Volvo Novum M;
+    font-weight: 600;
+    font-size: 13px;
+    cursor: pointer;
+    transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1), background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.futurebtn1:hover {
+    background: #000;
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.futurebtn2 {
+    padding: 12px 28px;
+    background: transparent;
+    color: #1a1a1a;
+    border: 2px solid #1a1a1a;
+    border-radius: 25px;
+    font-family: Volvo Novum M;
+    font-weight: 600;
+    font-size: 13px;
+    cursor: pointer;
+    transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1), background 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
+
+.futurebtn2:hover {
+    background: #1a1a1a;
+    color: #FFF;
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.futureimage {
+    width: 55%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 2;
+}
+
+.futurecar {
+    width: 100%;
+    height: 400px;
+    background-image: url('https://www.volvocars.com/images/v/-/media/market-assets/intl/applications/buy/configurator/images/next-generation/xc40-recharge/xc40-recharge-core-sage-green.png?h=600');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center right;
+    transform: translateX(40px);
+}
+
+.futurerow {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.futurefeature {
+    flex: 1;
+    width: 437px;
+    padding: 32px 44px;
+    border-radius: 28px;
+    text-align: center;
+    background: linear-gradient(87deg, rgba(255, 255, 255, 0.16) -12.14%, rgba(30, 144, 255, 0.16) 126.75%);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.futurefeature:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.featuretitle,
+.featuretitle2,
+.featuretitle3 {
+    font-family: Volvo Broad;
+    font-size: 40px;
+    color: #000;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+.featuredesc,
+.featuredesc2,
+.featuredesc3 {
+    font-family: Volvo Novum;
+    font-size: 20px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* --- MODEL SECTION --- */
+.modelsection {
+    width: 100%;
+    background: #111;
+    padding: 80px 80px;
+    box-sizing: border-box;
+}
+
+.modelcontainer {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.bigcard {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-image: url('https://placehold.co/1200x600/1a1a1a/fff?text=Volvo+XC90');
+    background-size: cover;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.bigcardcontent {
+    width: 70%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bigcardtitle {
+    font-family: Volvo Broad;
+    align-self: flex-start;
+    font-size: 64px;
+    color: #FFF;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.bigcarddesc {
+    font-family: Volvo Novum;
+    font-size: 20px;
+    color: #CCC;
+    margin-bottom: 20px;
+}
+
+.bigcardstats {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+    align-items: flex-end;
+    margin-top: auto;
+}
+
+.metriclabel,
+.metriclabel2,
+.metriclabel3 {
+    font-family: Volvo Novum;
+    font-size: 10px;
+    color: #999;
+    text-transform: uppercase;
+}
+
+.metricval,
+.metricval2,
+.metricval3 {
+    font-family: Volvo Novum;
+    font-size: 20px;
+    color: #FFF;
+    font-weight: 700;
+}
+
+.bigcardbuttons {
+    display: flex;
+    gap: 12px;
+    justify-self: flex-end;
+}
+
+.cardbtn1,
+.smallbtn1 {
+    padding: 12px 30px;
+    background: #FFF;
+    color: #000;
+    border: none;
+    border-radius: 20px;
+    font-family: Volvo Novum M;
+    font-weight: 700;
+    font-size: 12px;
+    cursor: pointer;
+    transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1), box-shadow 0.3s ease;
+}
+
+.cardbtn1:hover,
+.smallbtn1:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
+}
+
+.cardbtn2,
+.smallbtn2 {
+    padding: 12px 30px;
+    background: transparent;
+    color: #FFF;
+    border: 1px solid #FFF;
+    border-radius: 20px;
+    font-family: Volvo Novum M;
+    font-weight: 700;
+    font-size: 12px;
+    cursor: pointer;
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12);
+    transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1), background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cardbtn2:hover,
+.smallbtn2:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.15);
+}
+
+/* Model Row */
+.modelrow {
+    display: flex;
+    gap: 30px;
+}
+
+.modelcard {
+    width: 50%;
+    background: #1f1f1f;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.modelimage1 {
+    width: 100%;
+    height: 200px;
+    background-image: url('https://placehold.co/600x400/333/fff?text=XC40+Wheel');
+    background-size: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.modelimage2 {
+    width: 100%;
+    height: 200px;
+    background-image: url('https://placehold.co/600x400/333/fff?text=XC60+Side');
+    background-size: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.modelcontent {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.modeltitle1,
+.modeltitle2 {
+    font-family: Volvo Broad;
+    font-size: 42px;
+    color: #FFF;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.modeldesc1,
+.modeldesc2 {
+    font-family: Volvo Novum;
+    font-size: 18px;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.modelstat {
+    margin-bottom: 8px;
+}
+
+.mslabel {
+    font-family: Volvo Broad;
+    font-size: 24px;
+    margin-bottom: 8px;
+    color: #FFF;
+    text-transform: uppercase;
+}
+
+.msval {
+    font-family: Volvo Broad;
+    font-size: 24px;
+    color: #FFF;
+    font-weight: 700;
+}
+
+.modelbuttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.smallbtn2 {
+    border-color: #555;
+    color: #999;
+}
+
+/* --- FOOTER --- */
+.footersection {
+    width: 100%;
+    background: #000;
+    padding: 60px 80px;
+    border-top: 1px solid #333;
+    box-sizing: border-box;
+}
+
+.footercontainer {
+    display: flex;
+    gap: 100px;
+}
+
+.footercol {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footertitle {
+    font-family: Volvo Broad;
+    font-size: 14px;
+    color: #FFF;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.footerlink {
+    font-family: Volvo Novum;
+    font-size: 12px;
+    color: #666;
+    cursor: pointer;
+}
+
+
+/* product */
+
+
+@font-face {
+    font-family: Arial;
+    src: url('Arial.ttf');
+}
+
+/* .bigdiv{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+} */
+
+.topsection {
+    width: 100%;
+    background: #BFBFBF;
+    padding: 40px 80px 20px 80px;
+    box-sizing: border-box;
+}
+
+.topwrap {
+    display: flex;
+}
+
+.backnav {
+    font-family: Volvo Novum;
+    font-size: 14px;
+    color: #1A1A1A;
+    font-weight: 600;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.backnav:hover {
+    color: #444;
+}
+
+.introsection {
+    width: 100%;
+    background: #BFBFBF;
+    padding: 0px 80px 80px 80px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.introwrap {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 28px;
+    padding: 0;
+    width: 100%;
+    max-width: 1200px;
+    overflow: hidden;
+    height: 500px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
+}
+
+.introleft {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 50%;
+    padding: 80px;
+    box-sizing: border-box;
+}
+
+.carmodel {
+    font-family: Volvo Broad;
+    font-size: 64px;
+    color: #1A1A1A;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.cardesc {
+    font-family: Volvo Novum;
+    font-size: 18px;
+    color: #444;
+    line-height: 1.6;
+    max-width: 450px;
+}
+
+.colorselect {
+    display: flex;
+    gap: 16px;
+    margin-top: 10px;
+}
+
+.colordot,
+.colordot2,
+.colordot3,
+.colordot4 {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid transparent;
+    position: relative;
+    transition: transform 0.2s;
+}
+
+.colordot {
+    background: #E60000;
+}
+
+.colordot2 {
+    background: #1C38A0;
+}
+
+.colordot3 {
+    background: #E8E8E8;
+    border: 1px solid #CCC;
+}
+
+.colordot4 {
+    background: #2A6070;
+}
+
+.colordot:hover,
+.colordot2:hover,
+.colordot3:hover,
+.colordot4:hover {
+    transform: scale(1.1);
+}
+
+.introbuttons {
+    display: flex;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.introbtn {
+    padding: 14px 32px;
+    background: #1A1A1A;
+    border-radius: 25px;
+    font-family: Volvo Novum M;
+    font-size: 13px;
+    color: #FFF;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1), background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.introbtn:hover {
+    background: #000;
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+.introbtn2 {
+    padding: 14px 32px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 25px;
+    font-family: Volvo Novum M;
+    font-size: 13px;
+    color: #1A1A1A;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1), background 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
+
+.introbtn2:hover {
+    background: rgba(255, 255, 255, 0.6);
+    color: #1A1A1A;
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.introright {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 40px;
+}
+
+.carimage {
+    width: 100%;
+    height: 100%;
+    background-image: url('https://www.volvocars.com/images/v/-/media/market-assets/intl/applications/buy/configurator/images/xc90/xc90-plus-bright-bright-dusk.png?h=450');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.performsection {
+    width: 100%;
+    background: #BFBFBF;
+    padding: 80px 80px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.performwrap {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.performtitle {
+    font-family: Volvo Broad;
+    font-size: 48px;
+    color: #1A1A1A;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.performrow {
+    display: flex;
+    gap: 24px;
+}
+
+.performcard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 33.33%;
+    padding: 40px;
+    box-sizing: border-box;
+    border-radius: 28px;
+    background: linear-gradient(87deg, rgba(255, 255, 255, 0.16) -12.14%, rgba(30, 144, 255, 0.16) 126.75%);
+    height: 280px;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
+}
+
+.performlabel,
+.performlabel2,
+.performlabel3 {
+    font-family: Volvo Novum;
+    font-size: 20px;
+    color: #444;
+    font-weight: 500;
+}
+
+.performvalue,
+.performvalue2,
+.performvalue3 {
+    font-family: Volvo Broad;
+    font-size: 64px;
+    color: #1A1A1A;
+    text-transform: uppercase;
+    margin-top: auto;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.performbar {
+    width: 100%;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.performfill {
+    width: 70%;
+    height: 100%;
+    background: #1A1A1A;
+    border-radius: 5px;
+}
+
+.performfill2 {
+    width: 85%;
+    height: 100%;
+    background: #1A1A1A;
+    border-radius: 5px;
+}
+
+.performfill3 {
+    width: 90%;
+    height: 100%;
+    background: #1A1A1A;
+    border-radius: 5px;
+}
+
+.specsection {
+    width: 100%;
+    background: #BFBFBF;
+    padding: 80px 80px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.specwrap {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.spectitle {
+    font-family: Volvo Broad;
+    font-size: 48px;
+    color: #1A1A1A;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.specdesc {
+    font-family: Volvo Novum;
+    font-size: 16px;
+    color: #444;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+.specgrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.specbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+    height: 180px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.specbox:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.specname,
+.specname2,
+.specname3,
+.specname4,
+.specname5,
+.specname6,
+.specname7,
+.specname8 {
+    font-family: Volvo Novum;
+    font-size: 13px;
+    color: #333;
+    font-weight: 600;
+}
+
+.specvalue,
+.specvalue2,
+.specvalue3,
+.specvalue4,
+.specvalue5,
+.specvalue6,
+.specvalue7,
+.specvalue8 {
+    font-family: Volvo Broad;
+    font-size: 32px;
+    color: #1A1A1A;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.metricsection {
+    width: 100%;
+    background: #BFBFBF;
+    padding: 0px 80px 80px 80px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.metricwrap {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    background: #1A1A1A;
+    width: 100%;
+    max-width: 1200px;
+    padding: 60px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.metrictitle {
+    font-family: Volvo Broad;
+    font-size: 48px;
+    color: #FFF;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.metricrow {
+    display: flex;
+    gap: 60px;
+    margin-top: 20px;
+}
+
+.metricitem {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 33.33%;
+}
+
+.metriclabel {
+    font-family: Volvo Novum;
+    font-size: 14px;
+    color: #999;
+}
+
+.metricvalue,
+.metricvalue2,
+.metricvalue3 {
+    font-family: Volvo Broad;
+    font-size: 40px;
+    color: #FFF;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.metricbar {
+    width: 100%;
+    height: 8px;
+    background: #4A4A4A;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.metricfill {
+    width: 70%;
+    height: 100%;
+    background: #FFF;
+}
+
+.metricfill2 {
+    width: 85%;
+    height: 100%;
+    background: #FFF;
+}
+
+.metricfill3 {
+    width: 90%;
+    height: 100%;
+    background: #FFF;
+}
+
+.safetysectionn {
+    width: 100%;
+    background: #E8E8E8;
+    padding: 60px 80px;
+    box-sizing: border-box;
+}
+
+.safetywrap {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.safetytitlee {
+    font-family: Volvo Broad;
+    font-size: 48px;
+    color: #1A1A1A;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.safetytext {
+    font-family: Volvo Novum;
+    font-size: 20px;
+    color: #666;
+    line-height: 1.7;
+    width: 100%;
+}
+
+.safetyrow {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.safetyleft,
+.safetyright {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 50%;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.safetyhead,
+.safetyhead2 {
+    font-family: Volvo Broad;
+    font-size: 32px;
+    color: #1A1A1A;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.safetylist {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.safetyitem,
+.safetyitem2,
+.safetyitem3,
+.safetyitem4,
+.safetyitem5,
+.safetyitem6,
+.safetyitem7 {
+    font-family: Volvo Novum;
+    font-size: 20px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.luxurysection {
+    width: 100%;
+    background: #BFBFBF;
+    padding: 0px 80px 80px 80px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+.luxurywrap {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    height: 600px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.luxuryimage {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.luxurycontent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px;
+    box-sizing: border-box;
+    gap: 20px;
+}
+
+.luxurytitle {
+    font-family: Volvo Broad;
+    font-size: 64px;
+    color: #FFF;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.luxurytext {
+    font-family: Volvo Novum;
+    font-size: 18px;
+    color: #FFF;
+    line-height: 1.6;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+.luxurylist {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.luxuryitem,
+.luxuryitem2,
+.luxuryitem3,
+.luxuryitem4 {
+    font-family: Volvo Novum;
+    font-size: 14px;
+    color: #FFF;
+    font-weight: 500;
+}
+
+.sustainsection {
+    width: 100%;
+    background: #E8E8E8;
+    padding: 60px 80px;
+    box-sizing: border-box;
+}
+
+.sustainwrap {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.sustainsection {
+    width: 100%;
+    background: #BFBFBF;
+    padding: 0px 80px 80px 80px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.sustainwrap {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.sustaintitle {
+    font-family: Volvo Broad;
+    font-size: 48px;
+    color: #1A1A1A;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.sustaintext {
+    font-family: Volvo Novum;
+    font-size: 18px;
+    color: #444;
+    line-height: 1.6;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.sustainrow {
+    display: flex;
+    gap: 24px;
+    margin-top: 20px;
+}
+
+.sustaincard {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: 1;
+    padding: 40px;
+    border-radius: 28px;
+    text-align: left;
+    width: 405.329px;
+    height: 344.946px;
+    justify-content: center;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, rgba(200, 210, 220, 0.4) 0%, rgba(180, 190, 210, 0.4) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sustaincard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+    background: linear-gradient(135deg, rgba(200, 210, 220, 0.6) 0%, rgba(180, 190, 210, 0.6) 100%);
+}
+
+.sustainhead,
+.sustainhead2,
+.sustainhead3 {
+    font-family: Volvo Broad;
+    font-size: 48px;
+    color: #1A1A1A;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.sustaindesc,
+.sustaindesc2,
+.sustaindesc3 {
+    font-family: Volvo Novum;
+    font-size: 20px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.ctasection {
+    width: 100%;
+    background: #1A1A1A;
+    padding: 80px 80px;
+    box-sizing: border-box;
+}
+
+.ctawrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.ctatitle {
+    font-family: Volvo Broad;
+    font-size: 40px;
+    color: #FFF;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.ctatext {
+    font-family: Volvo Novum;
+    font-size: 14px;
+    color: #999;
+    text-align: center;
+    max-width: 500px;
+}
+
+.ctabuttons {
+    display: flex;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.ctabtn {
+    padding: 14px 28px;
+    background: #FFF;
+    border-radius: 25px;
+    font-family: Volvo Novum M;
+    font-size: 13px;
+    color: #1A1A1A;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1), background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ctabtn:hover {
+    background: #E5E5E5;
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.25);
+}
+
+.ctabtn2,
+.ctabtn3 {
+    padding: 14px 28px;
+    background: transparent;
+    border: 2px solid #FFF;
+    border-radius: 25px;
+    font-family: Volvo Novum M;
+    font-size: 13px;
+    color: #FFF;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1), background 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
+
+.ctabtn2:hover,
+.ctabtn3:hover {
+    background: #FFF;
+    color: #1A1A1A;
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.25);
+}
+
+.footersection {
+    width: 100%;
+    background: #1A1A1A;
+    padding: 60px 80px 40px 80px;
+    box-sizing: border-box;
+}
+
+.footerwrap {
+    display: flex;
+    gap: 60px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #2C2C2C;
+}
+
+.footercolumn {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 25%;
+}
+
+.footertitle {
+    font-family: Arial;
+    font-size: 16px;
+    color: #FFF;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.footertitle2 {
+    font-family: Arial;
+    font-size: 16px;
+    color: #FFF;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.footertitle3 {
+    font-family: Arial;
+    font-size: 16px;
+    color: #FFF;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.footertitle4 {
+    font-family: Arial;
+    font-size: 16px;
+    color: #FFF;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.footertext {
+    font-family: Arial;
+    font-size: 14px;
+    color: #999;
+    line-height: 1.6;
+}
+
+.footerlink {
+    font-family: Arial;
+    font-size: 14px;
+    color: #999;
+    cursor: pointer;
+}
+
+.footerlink:hover {
+    color: #FFF;
+}
+
+.footerlink2 {
+    font-family: Arial;
+    font-size: 14px;
+    color: #999;
+    cursor: pointer;
+}
+
+.footerlink2:hover {
+    color: #FFF;
+}
+
+.footerlink3 {
+    font-family: Arial;
+    font-size: 14px;
+    color: #999;
+    cursor: pointer;
+}
+
+.footerlink3:hover {
+    color: #FFF;
+}
+
+.footerlink4 {
+    font-family: Arial;
+    font-size: 14px;
+    color: #999;
+    cursor: pointer;
+}
+
+.footerlink4:hover {
+    color: #FFF;
+}
+
+.footerlink5 {
+    font-family: Arial;
+    font-size: 14px;
+    color: #999;
+    cursor: pointer;
+}
+
+.footerlink5:hover {
+    color: #FFF;
+}
+
+.footerlink6 {
+    font-family: Arial;
+    font-size: 14px;
+    color: #999;
+    cursor: pointer;
+}
+
+.footerlink6:hover {
+    color: #FFF;
+}
+
+.footerlink7 {
+    font-family: Arial;
+    font-size: 14px;
+    color: #999;
+    cursor: pointer;
+}
+
+.footerlink7:hover {
+    color: #FFF;
+}
+
+.footerlink8 {
+    font-family: Arial;
+    font-size: 14px;
+    color: #999;
+    cursor: pointer;
+}
+
+.footerlink8:hover {
+    color: #FFF;
+}
+
+.footerlink9 {
+    font-family: Arial;
+    font-size: 14px;
+    color: #999;
+    cursor: pointer;
+}
+
+.footerlink9:hover {
+    color: #FFF;
+}
+
+.footerbottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 16px;
+}
+
+.socialicon {
+    width: 32px;
+    height: 32px;
+    background: #2C2C2C;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.socialicon:hover {
+    background: #4A4A4A;
+}
+
+.socialicon2 {
+    width: 32px;
+    height: 32px;
+    background: #2C2C2C;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.socialicon2:hover {
+    background: #4A4A4A;
+}
+
+.socialicon3 {
+    width: 32px;
+    height: 32px;
+    background: #2C2C2C;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.socialicon3:hover {
+    background: #4A4A4A;
+}
+
+.socialicon4 {
+    width: 32px;
+    height: 32px;
+    background: #2C2C2C;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.socialicon4:hover {
+    background: #4A4A4A;
+}
+
+.socialicon5 {
+    width: 32px;
+    height: 32px;
+    background: #2C2C2C;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.socialicon5:hover {
+    background: #4A4A4A;
+}
+
+.footerlegals {
+    display: flex;
+    gap: 30px;
+}
+
+.legaltext {
+    font-family: Arial;
+    font-size: 12px;
+    color: #666;
+    cursor: pointer;
+}
+
+.legaltext:hover {
+    color: #999;
+}
+
+.legaltext2 {
+    font-family: Arial;
+    font-size: 12px;
+    color: #666;
+    cursor: pointer;
+}
+
+.legaltext2:hover {
+    color: #999;
+}
+
+.legaltext3 {
+    font-family: Arial;
+    font-size: 12px;
+    color: #666;
+    cursor: pointer;
+}
+
+.legaltext3:hover {
+    color: #999;
+}
+
+.legaltext4 {
+    font-family: Arial;
+    font-size: 12px;
+    color: #666;
+    cursor: pointer;
+}
+
+/* Override background images for 3D model containers */
+.bigcardimage,
+.modelimage1,
+.modelimage2,
+.carimage {
+    background-image: none !important;
+}
+
+.legaltext4:hover {
+    color: #999;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #C8C8C8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #111111;
+    overflow-x: hidden;
+    /* Dark theme base */
+}
+
+h1,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* --- RESPONSIVE BREAKPOINTS --- */
+@media (max-width: 1024px) {
+
+    .navcontainer,
+    .herocontainer,
+    .safetycontainer,
+    .futurecontainer,
+    .modelcontainer {
+        padding: 0 40px;
+    }
+
+    .bigcard {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .bigcardimage {
+        width: 100%;
+        height: 300px;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .bigcardcontent {
+        width: 100%;
+        padding: 40px;
+    }
+
+    .introsection .introwrap {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .introleft,
+    .introright {
+        width: 100%;
+    }
+
+    .introright {
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navcontainer {
+        padding: 20px;
+        justify-content: center;
+    }
+
+    .navmenu {
+        gap: 15px;
+        padding: 10px 20px;
+    }
+
+    .navlink,
+    .navlink2,
+    .navlink3,
+    .navlink4 {
+        font-size: 14px;
+    }
+
+    .herocontainer {
+        flex-direction: column;
+        padding: 0 20px;
+        margin-top: 100px;
+    }
+
+    .herocontent,
+    .herovisual {
+        width: 100%;
+    }
+
+    .herovisual {
+        height: 300px;
+        margin-top: 20px;
+        /* Fix for top view car absolute positioning if needed */
+        position: relative;
+    }
+
+    .herotitle {
+        font-size: 40px;
+    }
+
+    .modelrow {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .modelcard {
+        width: 100%;
+    }
+
+    .modelimage1,
+    .modelimage2 {
+        height: 250px;
+    }
+
+    .futuretop {
+        flex-direction: column;
+    }
+
+    .futurecar {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        margin-top: 20px;
+    }
+
+    .futurerow {
+        flex-direction: column;
+    }
+
+    /* Product Page Responsive */
+    .introleft {
+        padding: 30px;
+    }
+
+    .carmodel {
+        font-size: 32px;
+    }
+
+    .cardesc {
+        font-size: 16px;
+    }
+
+    .introbuttons {
+        flex-direction: column;
+    }
+
+    .performrow,
+    .specgrid {
+        grid-template-columns: 1fr;
+    }
+
+    .sustainwrap {
+        flex-direction: column;
+    }
+
+    .sustaincard {
+        width: 100% !important;
+        height: auto;
+    }
+
+    .luxurywrap {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .luxurycontent {
+        position: relative;
+        background: rgba(0, 0, 0, 0.6);
+        border-radius: 0 0 20px 20px;
+    }
+}

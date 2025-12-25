@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volvo XC90</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+
+    <main class="bigdiv">
+
+        <section class="topsection">
+            <div class="topwrap">
+                <h1 class="backnav" id="backnav"></h1>
+            </div>
+        </section>
+
+        <section class="introsection">
+            <div class="introwrap">
+                <div class="introleft">
+                    <h1 class="carmodel" id="carmodel"></h1>
+                    <p class="cardesc" id="cardesc"></p>
+                    <div class="colorselect">
+                        <div class="colordot"></div>
+                        <div class="colordot2"></div>
+                        <div class="colordot3"></div>
+                        <div class="colordot4"></div>
+                    </div>
+                    <div class="introbuttons">
+                        <div class="introbtn" id="introbtn"></div>
+                        <div class="introbtn2" id="introbtn2"></div>
+                    </div>
+                </div>
+                <div class="introright">
+                    <div class="carimage">
+                        <model-viewer id="product-model-viewer" src="" camera-controls disable-zoom auto-rotate
+                            field-of-view="25deg" shadow-intensity="1" style="width: 100%; height: 100%;"
+                            interaction-prompt="none"></model-viewer>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="performsection">
+            <div class="performwrap">
+                <h1 class="performtitle" id="performtitle"></h1>
+                <div class="performrow">
+                    <div class="performcard">
+                        <p class="performlabel" id="performlabel"></p>
+                        <h1 class="performvalue" id="performvalue"></h1>
+                        <div class="performbar">
+                            <div class="performfill"></div>
+                        </div>
+                    </div>
+                    <div class="performcard">
+                        <p class="performlabel2" id="performlabel2"></p>
+                        <h1 class="performvalue2" id="performvalue2"></h1>
+                        <div class="performbar">
+                            <div class="performfill2"></div>
+                        </div>
+                    </div>
+                    <div class="performcard">
+                        <p class="performlabel3" id="performlabel3"></p>
+                        <h1 class="performvalue3" id="performvalue3"></h1>
+                        <div class="performbar">
+                            <div class="performfill3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="specsection">
+            <div class="specwrap">
+                <h1 class="spectitle" id="spectitle"></h1>
+                <p class="specdesc" id="specdesc"></p>
+                <div class="specgrid">
+                    <div class="specbox">
+                        <p class="specname" id="specname"></p>
+                        <h1 class="specvalue" id="specvalue"></h1>
+                    </div>
+                    <div class="specbox">
+                        <p class="specname2" id="specname2"></p>
+                        <h1 class="specvalue2" id="specvalue2"></h1>
+                    </div>
+                    <div class="specbox">
+                        <p class="specname3" id="specname3"></p>
+                        <h1 class="specvalue3" id="specvalue3"></h1>
+                    </div>
+                    <div class="specbox">
+                        <p class="specname4" id="specname4"></p>
+                        <h1 class="specvalue4" id="specvalue4"></h1>
+                    </div>
+                    <div class="specbox">
+                        <p class="specname5" id="specname5"></p>
+                        <h1 class="specvalue5" id="specvalue5"></h1>
+                    </div>
+                    <div class="specbox">
+                        <p class="specname6" id="specname6"></p>
+                        <h1 class="specvalue6" id="specvalue6"></h1>
+                    </div>
+                    <div class="specbox">
+                        <p class="specname7" id="specname7"></p>
+                        <h1 class="specvalue7" id="specvalue7"></h1>
+                    </div>
+                    <div class="specbox">
+                        <p class="specname8" id="specname8"></p>
+                        <h1 class="specvalue8" id="specvalue8"></h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="metricsection">
+            <div class="metricwrap">
+                <h1 class="metrictitle" id="metrictitle"></h1>
+                <div class="metricrow">
+                    <div class="metricitem">
+                        <p class="metriclabel">Acceleration</p>
+                        <div class="metricbar">
+                            <div class="metricfill"></div>
+                        </div>
+                        <h1 class="metricvalue" id="metricvalue"></h1>
+                    </div>
+                    <div class="metricitem">
+                        <p class="metriclabel">Top Speed</p>
+                        <div class="metricbar">
+                            <div class="metricfill2"></div>
+                        </div>
+                        <h1 class="metricvalue2" id="metricvalue2"></h1>
+                    </div>
+                    <div class="metricitem">
+                        <p class="metriclabel">Electric Range</p>
+                        <div class="metricbar">
+                            <div class="metricfill3"></div>
+                        </div>
+                        <h1 class="metricvalue3" id="metricvalue3"></h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="safetysectionn">
+            <div class="safetywrap">
+                <h1 class="safetytitlee" id="safetytitle"></h1>
+                <p class="safetytext" id="safetytext"></p>
+                <div class="safetyrow">
+                    <div class="safetyleft">
+                        <h1 class="safetyhead" id="safetyhead"></h1>
+                        <div class="safetylist">
+                            <p class="safetyitem" id="safetyitem"></p>
+                            <p class="safetyitem2" id="safetyitem2"></p>
+                            <p class="safetyitem3" id="safetyitem3"></p>
+                            <p class="safetyitem4" id="safetyitem4"></p>
+                        </div>
+                    </div>
+                    <div class="safetyright">
+                        <h1 class="safetyhead2" id="safetyhead2"></h1>
+                        <div class="safetylist">
+                            <p class="safetyitem5" id="safetyitem5"></p>
+                            <p class="safetyitem6" id="safetyitem6"></p>
+                            <p class="safetyitem7" id="safetyitem7"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="luxurysection">
+            <div class="luxurywrap">
+                <div class="luxuryimage"></div>
+                <div class="luxurycontent">
+                    <h1 class="luxurytitle" id="luxurytitle"></h1>
+                    <p class="luxurytext" id="luxurytext"></p>
+                    <div class="luxurylist">
+                        <p class="luxuryitem" id="luxuryitem"></p>
+                        <p class="luxuryitem2" id="luxuryitem2"></p>
+                        <p class="luxuryitem3" id="luxuryitem3"></p>
+                        <p class="luxuryitem4" id="luxuryitem4"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sustainsection">
+            <div class="sustainwrap">
+                <h1 class="sustaintitle" id="sustaintitle"></h1>
+                <p class="sustaintext" id="sustaintext"></p>
+                <div class="sustainrow">
+                    <div class="sustaincard">
+                        <h1 class="sustainhead" id="sustainhead"></h1>
+                        <p class="sustaindesc" id="sustaindesc"></p>
+                    </div>
+                    <div class="sustaincard">
+                        <h1 class="sustainhead2" id="sustainhead2"></h1>
+                        <p class="sustaindesc2" id="sustaindesc2"></p>
+                    </div>
+                    <div class="sustaincard">
+                        <h1 class="sustainhead3" id="sustainhead3"></h1>
+                        <p class="sustaindesc3" id="sustaindesc3"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ctasection">
+            <div class="ctawrap">
+                <h1 class="ctatitle" id="ctatitle"></h1>
+                <p class="ctatext" id="ctatext"></p>
+                <div class="ctabuttons">
+                    <div class="ctabtn" id="ctabtn"></div>
+                    <div class="ctabtn2" id="ctabtn2"></div>
+                    <div class="ctabtn3" id="ctabtn3"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="footersection">
+            <div class="footerwrap">
+                <div class="footercolumn">
+                    <h1 class="footertitle" id="footertitle"></h1>
+                    <p class="footertext" id="footertext"></p>
+                </div>
+                <div class="footercolumn">
+                    <h1 class="footertitle2" id="footertitle2"></h1>
+                    <p class="footerlink" id="footerlink"></p>
+                    <p class="footerlink2" id="footerlink2"></p>
+                    <p class="footerlink3" id="footerlink3"></p>
+                </div>
+                <div class="footercolumn">
+                    <h1 class="footertitle3" id="footertitle3"></h1>
+                    <p class="footerlink4" id="footerlink4"></p>
+                    <p class="footerlink5" id="footerlink5"></p>
+                    <p class="footerlink6" id="footerlink6"></p>
+                </div>
+                <div class="footercolumn">
+                    <h1 class="footertitle4" id="footertitle4"></h1>
+                    <p class="footerlink7" id="footerlink7"></p>
+                    <p class="footerlink8" id="footerlink8"></p>
+                    <p class="footerlink9" id="footerlink9"></p>
+                </div>
+            </div>
+            <div class="footerbottom">
+                <div class="socialmedia">
+                    <div class="socialicon"></div>
+                    <div class="socialicon2"></div>
+                    <div class="socialicon3"></div>
+                    <div class="socialicon4"></div>
+                    <div class="socialicon5"></div>
+                </div>
+                <div class="footerlegals">
+                    <p class="legaltext" id="legaltext"></p>
+                    <p class="legaltext2" id="legaltext2"></p>
+                    <p class="legaltext3" id="legaltext3"></p>
+                    <p class="legaltext4" id="legaltext4"></p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="product.js"></script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Intro Animation
+        gsap.from(".introleft", {
+            x: -50,
+            opacity: 0,
+            duration: 1,
+            ease: "power3.out"
+        });
+
+        gsap.from(".introright", {
+            x: 50,
+            opacity: 0,
+            duration: 1,
+            ease: "power3.out",
+            delay: 0.3
+        });
+
+        // Sections Animation
+        gsap.utils.toArray("section").forEach(section => {
+            if (section.classList.contains('introsection') || section.classList.contains('topsection')) return;
+            gsap.from(section, {
+                scrollTrigger: {
+                    trigger: section,
+                    start: "top 90%",
+                    toggleActions: "play none none reverse"
+                },
+                y: 30,
+                opacity: 0,
+                duration: 0.8,
+                ease: "power2.out"
+            });
+        });
+    </script>
+</body>
+
+</html>
