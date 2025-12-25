@@ -36,9 +36,9 @@
                 </div>
 
                 <div class="herovisual">
-                    <div class="car-top-view" style="width: 100%; height: 100%;">
-                        <model-viewer src="3d Models/white suv 3d model.glb" camera-orbit="0deg 1deg 105%" disable-zoom field-of-view="25deg" shadow-intensity="1" style="width: 100%; height: 100%;" interaction-prompt="none"></model-viewer>
-                    </div>
+                    <model-viewer src="3d Models/white suv 3d model.glb" camera-orbit="90deg 0deg 75%" disable-zoom
+                        field-of-view="20deg" shadow-intensity="1"
+                        interaction-prompt="none"></model-viewer>
                 </div>
 
                 <div class="herostats">
@@ -48,7 +48,7 @@
                             <p class="statval" id="statval1"></p>
                         </div>
                         <div class="statbar">
-                            <div class="statfill" style="width: 70%"></div>
+                            <div class="statfill w70"></div>
                         </div>
                     </div>
                     <div class="statitem">
@@ -57,7 +57,7 @@
                             <p class="statval2" id="statval2"></p>
                         </div>
                         <div class="statbar">
-                            <div class="statfill" style="width: 90%"></div>
+                            <div class="statfill w90"></div>
                         </div>
                     </div>
                     <div class="statitem">
@@ -66,7 +66,7 @@
                             <p class="statval3" id="statval3"></p>
                         </div>
                         <div class="statbar">
-                            <div class="statfill" style="width: 80%"></div>
+                            <div class="statfill w80"></div>
                         </div>
                     </div>
                 </div>
@@ -80,32 +80,32 @@
         <section class="safetysection">
             <div class="safetycontainer">
 
-                <!-- Horizontal Wrapper -->
+                
                 <div class="safety-wrapper">
 
-                    <!-- Panel 1 (Black) -->
-                    <div class="safetypanel panel1" style="background:#000000;">
+                    
+                    <div class="safetypanel panel1">
                         <h1 class="safetytitle" id="safetytitle"></h1>
                         <h2 class="safetytitle2" id="safetytitle2"></h2>
                         <p class="safetydesc" id="safetydesc"></p>
                     </div>
 
-                    <!-- Panel 2 -->
-                    <div class="safetypanel panel2" style="background:#C0C0C0;">
+                    
+                    <div class="safetypanel panel2">
                         <h1 class="safetytitle" id="safetytitle3"></h1>
                         <h2 class="safetytitle2" id="safetytitle4"></h2>
                         <p class="safetydesc" id="safetydesc2"></p>
                     </div>
 
-                    <!-- Panel 3 -->
-                    <div class="safetypanel panel3" style="background:#607D8B;">
+                    
+                    <div class="safetypanel panel3">
                         <h1 class="safetytitle" id="safetytitle5"></h1>
                         <h2 class="safetytitle2" id="safetytitle6"></h2>
                         <p class="safetydesc" id="safetydesc3"></p>
                     </div>
 
-                    <!-- Panel 4 -->
-                    <div class="safetypanel panel4" style="background:#1E90FF;">
+                    
+                    <div class="safetypanel panel4">
                         <h1 class="safetytitle" id="safetytitle7"></h1>
                         <h2 class="safetytitle2" id="safetytitle8"></h2>
                         <p class="safetydesc" id="safetydesc4"></p>
@@ -120,7 +120,7 @@
 
         <section class="futuresection">
             <div class="futurecontainer">
-                <!-- Top row: Content left, Image right -->
+                
                 <div class="futuretop">
                     <div class="futurecontent">
                         <h1 class="futuretitle" id="futuretitle"></h1>
@@ -132,13 +132,13 @@
                     </div>
                 </div>
 
-                <div class="futurecar" style="position: absolute; right: 0; bottom: 0; width: 60%; height: 80%;">
+                <div class="futurecar">
                     <model-viewer src="3d Models/volvo suv 3d model.glb" camera-controls disable-zoom auto-rotate
-                        field-of-view="25deg" shadow-intensity="1" style="width: 100%; height: 100%;"
+                        field-of-view="10deg" shadow-intensity="1"
                         interaction-prompt="none"></model-viewer>
                 </div>
 
-                <!-- Bottom row: Three glassy feature cards -->
+                
                 <div class="futurerow">
                     <div class="futurefeature">
                         <h1 class="featuretitle" id="featuretitle1"></h1>
@@ -160,8 +160,11 @@
             <div class="modelcontainer">
 
                 <div class="bigcard">
-                    <div class="bigcardimage" onclick="window.location.href='product.html?model=xc90'">
-                        <model-viewer src="3d Models/volvo suv 3d model.glb" camera-controls disable-zoom auto-rotate field-of-view="25deg" shadow-intensity="1" style="width: 100%; height: 100%;" interaction-prompt="none"></model-viewer>
+                    <div class="bigcardimage" onclick="window.location.href='product.html?model=xc90'"
+                       >
+                        <model-viewer src="3d Models/volvo suv 3d model.glb" camera-controls disable-zoom auto-rotate
+                            field-of-view="10deg" shadow-intensity="1"
+                            interaction-prompt="none"></model-viewer>
                     </div>
                     <div class="bigcardcontent">
                         <h1 class="bigcardtitle" id="bigcardtitle"></h1>
@@ -181,7 +184,8 @@
                             </div>
                         </div>
                         <div class="bigcardbuttons">
-                            <button class="cardbtn1" id="cardbtn1" onclick="window.location.href='product.html?model=xc90'"></button>
+                            <button class="cardbtn1" id="cardbtn1"
+                                onclick="window.location.href='product.html?model=xc90'"></button>
                             <button class="cardbtn2" id="cardbtn2"></button>
                         </div>
                     </div>
@@ -191,7 +195,7 @@
                     <div class="modelcard">
                         <div class="modelimage1" onclick="window.location.href='product.html?model=xc40'">
                             <model-viewer src="3d Models/white suv 3d model.glb" camera-controls disable-zoom
-                                auto-rotate shadow-intensity="1" style="width: 100%; height: 100%;"
+                                auto-rotate field-of-view="30deg" camera-orbit="auto auto 65%" shadow-intensity="1"
                                 interaction-prompt="none"></model-viewer>
                         </div>
                         <div class="modelcontent">
@@ -204,7 +208,7 @@
                                     <p class="msval" id="msval1_1"></p>
                                 </div>
                                 <div class="statbar">
-                                    <div class="statfill" style="width:65%"></div>
+                                    <div class="statfill w65"></div>
                                 </div>
                             </div>
                             <div class="modelstat">
@@ -213,7 +217,7 @@
                                     <p class="msval" id="msval1_2"></p>
                                 </div>
                                 <div class="statbar">
-                                    <div class="statfill" style="width:80%"></div>
+                                    <div class="statfill w80"></div>
                                 </div>
                             </div>
                             <div class="modelstat">
@@ -222,12 +226,13 @@
                                     <p class="msval" id="msval1_3"></p>
                                 </div>
                                 <div class="statbar">
-                                    <div class="statfill" style="width:50%"></div>
+                                    <div class="statfill w50"></div>
                                 </div>
                             </div>
 
                             <div class="modelbuttons">
-                                <button class="smallbtn1" id="smallbtn1_1" onclick="window.location.href='product.html?model=xc40'"></button>
+                                <button class="smallbtn1" id="smallbtn1_1"
+                                    onclick="window.location.href='product.html?model=xc40'"></button>
                                 <button class="cardbtn2" id="smallbtn1_2"></button>
                             </div>
                         </div>
@@ -236,7 +241,7 @@
                     <div class="modelcard">
                         <div class="modelimage2" onclick="window.location.href='product.html?model=xc60'">
                             <model-viewer src="3d Models/beige suv 3d model.glb" camera-controls disable-zoom
-                                auto-rotate shadow-intensity="1" style="width: 100%; height: 100%;"
+                                auto-rotate field-of-view="30deg" camera-orbit="auto auto 65%" shadow-intensity="1"
                                 interaction-prompt="none"></model-viewer>
                         </div>
                         <div class="modelcontent">
@@ -249,7 +254,7 @@
                                     <p class="msval" id="msval2_1"></p>
                                 </div>
                                 <div class="statbar">
-                                    <div class="statfill" style="width:75%"></div>
+                                    <div class="statfill w75"></div>
                                 </div>
                             </div>
                             <div class="modelstat">
@@ -258,7 +263,7 @@
                                     <p class="msval" id="msval2_2"></p>
                                 </div>
                                 <div class="statbar">
-                                    <div class="statfill" style="width:85%"></div>
+                                    <div class="statfill w85"></div>
                                 </div>
                             </div>
                             <div class="modelstat">
@@ -267,12 +272,13 @@
                                     <p class="msval" id="msval2_3"></p>
                                 </div>
                                 <div class="statbar">
-                                    <div class="statfill" style="width:70%"></div>
+                                    <div class="statfill w70"></div>
                                 </div>
                             </div>
 
                             <div class="modelbuttons">
-                                <button class="smallbtn1" id="smallbtn2_1" onclick="window.location.href='product.html?model=xc60'"></button>
+                                <button class="smallbtn1" id="smallbtn2_1"
+                                    onclick="window.location.href='product.html?model=xc60'"></button>
                                 <button class="cardbtn2" id="smallbtn2_2"></button>
                             </div>
                         </div>
@@ -282,7 +288,7 @@
                     <div class="modelcard">
                         <div class="modelimage1" onclick="window.location.href='product.html?model=s90'">
                             <model-viewer src="3d Models/luxury sedan 3d model.glb" camera-controls disable-zoom
-                                auto-rotate shadow-intensity="1" style="width: 100%; height: 100%;"
+                                auto-rotate field-of-view="30deg" camera-orbit="auto auto 65%" shadow-intensity="1"
                                 interaction-prompt="none"></model-viewer>
                         </div>
                         <div class="modelcontent">
@@ -295,7 +301,7 @@
                                     <p class="msval" id="msval3_1"></p>
                                 </div>
                                 <div class="statbar">
-                                    <div class="statfill" style="width:65%"></div>
+                                    <div class="statfill w65"></div>
                                 </div>
                             </div>
                             <div class="modelstat">
@@ -304,7 +310,7 @@
                                     <p class="msval" id="msval3_2"></p>
                                 </div>
                                 <div class="statbar">
-                                    <div class="statfill" style="width:80%"></div>
+                                    <div class="statfill w80"></div>
                                 </div>
                             </div>
                             <div class="modelstat">
@@ -313,12 +319,13 @@
                                     <p class="msval" id="msval3_3"></p>
                                 </div>
                                 <div class="statbar">
-                                    <div class="statfill" style="width:50%"></div>
+                                    <div class="statfill w50"></div>
                                 </div>
                             </div>
 
                             <div class="modelbuttons">
-                                <button class="smallbtn1" id="smallbtn3_1" onclick="window.location.href='product.html?model=s90'"></button>
+                                <button class="smallbtn1" id="smallbtn3_1"
+                                    onclick="window.location.href='product.html?model=s90'"></button>
                                 <button class="cardbtn2" id="smallbtn3_2"></button>
                             </div>
                         </div>
@@ -327,7 +334,7 @@
                     <div class="modelcard">
                         <div class="modelimage2" onclick="window.location.href='product.html?model=s60'">
                             <model-viewer src="3d Models/luxury sedan 3d model.glb" camera-controls disable-zoom
-                                auto-rotate shadow-intensity="1" style="width: 100%; height: 100%;"
+                                auto-rotate field-of-view="30deg" camera-orbit="auto auto 65%" shadow-intensity="1"
                                 interaction-prompt="none"></model-viewer>
                         </div>
                         <div class="modelcontent">
@@ -340,7 +347,7 @@
                                     <p class="msval" id="msval4_1"></p>
                                 </div>
                                 <div class="statbar">
-                                    <div class="statfill" style="width:75%"></div>
+                                    <div class="statfill w75"></div>
                                 </div>
                             </div>
                             <div class="modelstat">
@@ -349,7 +356,7 @@
                                     <p class="msval" id="msval4_2"></p>
                                 </div>
                                 <div class="statbar">
-                                    <div class="statfill" style="width:85%"></div>
+                                    <div class="statfill w85"></div>
                                 </div>
                             </div>
                             <div class="modelstat">
@@ -358,12 +365,13 @@
                                     <p class="msval" id="msval4_3"></p>
                                 </div>
                                 <div class="statbar">
-                                    <div class="statfill" style="width:70%"></div>
+                                    <div class="statfill w70"></div>
                                 </div>
                             </div>
 
                             <div class="modelbuttons">
-                                <button class="smallbtn1" id="smallbtn4_1" onclick="window.location.href='product.html?model=s60'"></button>
+                                <button class="smallbtn1" id="smallbtn4_1"
+                                    onclick="window.location.href='product.html?model=s60'"></button>
                                 <button class="cardbtn2" id="smallbtn4_2"></button>
                             </div>
                         </div>
@@ -373,7 +381,7 @@
                     <div class="modelcard">
                         <div class="modelimage1" onclick="window.location.href='product.html?model=ex90'">
                             <model-viewer src="3d Models/volvo suv 3d model.glb" camera-controls disable-zoom
-                                auto-rotate shadow-intensity="1" style="width: 100%; height: 100%;"
+                                auto-rotate field-of-view="30deg" camera-orbit="auto auto 65%" shadow-intensity="1"
                                 interaction-prompt="none"></model-viewer>
                         </div>
                         <div class="modelcontent">
@@ -386,7 +394,7 @@
                                     <p class="msval" id="msval5_1"></p>
                                 </div>
                                 <div class="statbar">
-                                    <div class="statfill" style="width:65%"></div>
+                                    <div class="statfill w65"></div>
                                 </div>
                             </div>
                             <div class="modelstat">
@@ -395,7 +403,7 @@
                                     <p class="msval" id="msval5_2"></p>
                                 </div>
                                 <div class="statbar">
-                                    <div class="statfill" style="width:80%"></div>
+                                    <div class="statfill w80"></div>
                                 </div>
                             </div>
                             <div class="modelstat">
@@ -404,12 +412,13 @@
                                     <p class="msval" id="msval5_3"></p>
                                 </div>
                                 <div class="statbar">
-                                    <div class="statfill" style="width:50%"></div>
+                                    <div class="statfill w50"></div>
                                 </div>
                             </div>
 
                             <div class="modelbuttons">
-                                <button class="smallbtn1" id="smallbtn5_1" onclick="window.location.href='product.html?model=ex90'"></button>
+                                <button class="smallbtn1" id="smallbtn5_1"
+                                    onclick="window.location.href='product.html?model=ex90'"></button>
                                 <button class="cardbtn2" id="smallbtn5_2"></button>
                             </div>
                         </div>
@@ -418,7 +427,7 @@
                     <div class="modelcard">
                         <div class="modelimage2" onclick="window.location.href='product.html?model=ex40'">
                             <model-viewer src="3d Models/white suv 3d model.glb" camera-controls disable-zoom
-                                auto-rotate shadow-intensity="1" style="width: 100%; height: 100%;"
+                                auto-rotate field-of-view="30deg" camera-orbit="auto auto 65%" shadow-intensity="1"
                                 interaction-prompt="none"></model-viewer>
                         </div>
                         <div class="modelcontent">
@@ -431,7 +440,7 @@
                                     <p class="msval" id="msval6_1"></p>
                                 </div>
                                 <div class="statbar">
-                                    <div class="statfill" style="width:75%"></div>
+                                    <div class="statfill w75"></div>
                                 </div>
                             </div>
                             <div class="modelstat">
@@ -440,7 +449,7 @@
                                     <p class="msval" id="msval6_2"></p>
                                 </div>
                                 <div class="statbar">
-                                    <div class="statfill" style="width:85%"></div>
+                                    <div class="statfill w85"></div>
                                 </div>
                             </div>
                             <div class="modelstat">
@@ -449,12 +458,13 @@
                                     <p class="msval" id="msval6_3"></p>
                                 </div>
                                 <div class="statbar">
-                                    <div class="statfill" style="width:70%"></div>
+                                    <div class="statfill w70"></div>
                                 </div>
                             </div>
 
                             <div class="modelbuttons">
-                                <button class="smallbtn1" id="smallbtn6_1" onclick="window.location.href='product.html?model=ex40'"></button>
+                                <button class="smallbtn1" id="smallbtn6_1"
+                                    onclick="window.location.href='product.html?model=ex40'"></button>
                                 <button class="cardbtn2" id="smallbtn6_2"></button>
                             </div>
                         </div>
@@ -464,7 +474,7 @@
                     <div class="modelcard">
                         <div class="modelimage1" onclick="window.location.href='product.html?model=ex30'">
                             <model-viewer src="3d Models/beige suv 3d model.glb" camera-controls disable-zoom
-                                auto-rotate shadow-intensity="1" style="width: 100%; height: 100%;"
+                                auto-rotate field-of-view="30deg" camera-orbit="auto auto 65%" shadow-intensity="1"
                                 interaction-prompt="none"></model-viewer>
                         </div>
                         <div class="modelcontent">
@@ -477,7 +487,7 @@
                                     <p class="msval" id="msval7_1"></p>
                                 </div>
                                 <div class="statbar">
-                                    <div class="statfill" style="width:65%"></div>
+                                    <div class="statfill w65"></div>
                                 </div>
                             </div>
                             <div class="modelstat">
@@ -486,7 +496,7 @@
                                     <p class="msval" id="msval7_2"></p>
                                 </div>
                                 <div class="statbar">
-                                    <div class="statfill" style="width:80%"></div>
+                                    <div class="statfill w80"></div>
                                 </div>
                             </div>
                             <div class="modelstat">
@@ -495,12 +505,13 @@
                                     <p class="msval" id="msval7_3"></p>
                                 </div>
                                 <div class="statbar">
-                                    <div class="statfill" style="width:50%"></div>
+                                    <div class="statfill w50"></div>
                                 </div>
                             </div>
 
                             <div class="modelbuttons">
-                                <button class="smallbtn1" id="smallbtn7_1" onclick="window.location.href='product.html?model=ex30'"></button>
+                                <button class="smallbtn1" id="smallbtn7_1"
+                                    onclick="window.location.href='product.html?model=ex30'"></button>
                                 <button class="cardbtn2" id="smallbtn7_2"></button>
                             </div>
                         </div>
@@ -509,7 +520,7 @@
                     <div class="modelcard">
                         <div class="modelimage2" onclick="window.location.href='product.html?model=v60'">
                             <model-viewer src="3d Models/luxury sedan 3d model.glb" camera-controls disable-zoom
-                                auto-rotate shadow-intensity="1" style="width: 100%; height: 100%;"
+                                auto-rotate field-of-view="30deg" camera-orbit="auto auto 65%" shadow-intensity="1"
                                 interaction-prompt="none"></model-viewer>
                         </div>
                         <div class="modelcontent">
@@ -522,7 +533,7 @@
                                     <p class="msval" id="msval8_1"></p>
                                 </div>
                                 <div class="statbar">
-                                    <div class="statfill" style="width:75%"></div>
+                                    <div class="statfill w75"></div>
                                 </div>
                             </div>
                             <div class="modelstat">
@@ -531,7 +542,7 @@
                                     <p class="msval" id="msval8_2"></p>
                                 </div>
                                 <div class="statbar">
-                                    <div class="statfill" style="width:85%"></div>
+                                    <div class="statfill w85"></div>
                                 </div>
                             </div>
                             <div class="modelstat">
@@ -540,12 +551,13 @@
                                     <p class="msval" id="msval8_3"></p>
                                 </div>
                                 <div class="statbar">
-                                    <div class="statfill" style="width:70%"></div>
+                                    <div class="statfill w70"></div>
                                 </div>
                             </div>
 
                             <div class="modelbuttons">
-                                <button class="smallbtn1" id="smallbtn8_1" onclick="window.location.href='product.html?model=v60'"></button>
+                                <button class="smallbtn1" id="smallbtn8_1"
+                                    onclick="window.location.href='product.html?model=v60'"></button>
                                 <button class="cardbtn2" id="smallbtn8_2"></button>
                             </div>
                         </div>

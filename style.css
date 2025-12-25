@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 @font-face {
     font-family: Volvo Broad;
     src: url('VolvoBroad.ttf');
@@ -17,14 +21,14 @@
 
 .bigdiv {
     display: block;
-    /* WAS display: flex - This is the main culprit */
+    
     width: 100%;
-    /* flex-direction: column;  <-- Remove this */
+    
     overflow-x: hidden;
-    /* innovative safety precaution */
+    
 }
 
-/* --- NAV SECTION --- */
+
 .navsection {
     position: absolute;
     width: 100%;
@@ -66,7 +70,7 @@
 
 }
 
-/* --- HERO SECTION --- */
+
 .herosection {
     width: 100%;
     height: 100vh;
@@ -226,7 +230,7 @@
     box-shadow: 98px 0 27px 0 rgba(0, 0, 0, 0.02), 63px 0 25px 0 rgba(0, 0, 0, 0.15), 35px 0 21px 0 rgba(0, 0, 0, 0.50), 16px 0 16px 0 rgba(0, 0, 0, 0.85), 4px 0 9px 0 rgba(0, 0, 0, 0.98);
 }
 
-/* --- BANNER --- */
+
 .bannersection {
     position: relative;
     height: 100vh;
@@ -245,27 +249,25 @@
 }
 
 
-/* --- SAFETY SECTION --- */
+
 .safetysection {
     width: 100%;
     height: 100vh;
-    /* Must be viewport height */
+    
     background: #000;
     text-align: center;
     overflow: hidden;
     position: relative;
-    /* Helps GSAP context */
+    
 }
 
 
-/* .safetycontainer {
-    overflow: hidden;
-  } */
+
 
 .safety-wrapper {
     display: flex;
     width: 400vw;
-    /* 4 panels */
+    
 }
 
 .safetypanel {
@@ -307,7 +309,7 @@
     margin: 0 auto;
 }
 
-/* --- FUTURE SECTION --- */
+
 .futuresection {
     width: 100%;
     background: #D8D8D8;
@@ -470,7 +472,7 @@
     line-height: 1.5;
 }
 
-/* --- MODEL SECTION --- */
+
 .modelsection {
     width: 100%;
     background: #111;
@@ -487,21 +489,34 @@
 .bigcard {
     display: flex;
     align-items: center;
+    flex-direction: row-reverse;
+    
     width: 100%;
     height: 500px;
     border-radius: 20px;
     overflow: hidden;
-    background-image: url('https://placehold.co/1200x600/1a1a1a/fff?text=Volvo+XC90');
-    background-size: cover;
-    padding: 40px;
+    background: #1A1A1A;
+    padding: 0;
     box-sizing: border-box;
 }
 
+.bigcardimage {
+    width: 50%;
+    height: 100%;
+    background: none;
+    position: relative;
+    
+    display: block;
+}
+
 .bigcardcontent {
-    width: 70%;
-    height: 400px;
+    width: 50%;
+    height: 100%;
     display: flex;
     flex-direction: column;
+    padding: 100px 40px;
+    box-sizing: border-box;
+    justify-content: center;
 }
 
 .bigcardtitle {
@@ -596,7 +611,7 @@
     box-shadow: 0 6px 20px rgba(255, 255, 255, 0.15);
 }
 
-/* Model Row */
+
 .modelrow {
     display: flex;
     gap: 30px;
@@ -682,7 +697,7 @@
     color: #999;
 }
 
-/* --- FOOTER --- */
+
 .footersection {
     width: 100%;
     background: #000;
@@ -719,7 +734,7 @@
 }
 
 
-/* product */
+
 
 
 @font-face {
@@ -727,11 +742,7 @@
     src: url('Arial.ttf');
 }
 
-/* .bigdiv{
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-} */
+
 
 .topsection {
     width: 100%;
@@ -1785,7 +1796,7 @@
     cursor: pointer;
 }
 
-/* Override background images for 3D model containers */
+
 .bigcardimage,
 .modelimage1,
 .modelimage2,
@@ -1807,12 +1818,7 @@ p {
     padding: 0;
 }
 
-body {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0;
-    background-color: #C8C8C8;
-}
+
 
 
 
@@ -1831,7 +1837,7 @@ body {
     width: 100%;
     background-color: #111111;
     overflow-x: hidden;
-    /* Dark theme base */
+    
 }
 
 h1,
@@ -1841,7 +1847,7 @@ p {
 }
 
 
-/* --- RESPONSIVE BREAKPOINTS --- */
+
 @media (max-width: 1024px) {
 
     .navcontainer,
@@ -1915,7 +1921,7 @@ p {
     .herovisual {
         height: 300px;
         margin-top: 20px;
-        /* Fix for top view car absolute positioning if needed */
+        
         position: relative;
     }
 
@@ -1952,7 +1958,7 @@ p {
         flex-direction: column;
     }
 
-    /* Product Page Responsive */
+    
     .introleft {
         padding: 30px;
     }
@@ -1992,5 +1998,446 @@ p {
         position: relative;
         background: rgba(0, 0, 0, 0.6);
         border-radius: 0 0 20px 20px;
+    }
+}
+
+
+model-viewer {
+    width: 100%;
+    height: 100%;
+}
+
+.car-top-view {
+    width: 100%;
+    height: 100%;
+}
+
+.futurecar {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 60%;
+    height: 80%;
+}
+
+
+.w50 {
+    width: 50%;
+}
+
+.w65 {
+    width: 65%;
+}
+
+.w70 {
+    width: 70%;
+}
+
+.w75 {
+    width: 75%;
+}
+
+.w80 {
+    width: 80%;
+}
+
+.w85 {
+    width: 85%;
+}
+
+.w90 {
+    width: 90%;
+}
+
+
+.panel1 {
+    background: #000000;
+}
+
+.panel2 {
+    background: #C0C0C0;
+}
+
+.panel3 {
+    background: #607D8B;
+}
+
+.panel4 {
+    background: #1E90FF;
+}
+
+
+
+@media (max-width: 768px) {
+
+    
+    html,
+    body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    
+    .navcontainer {
+        padding: 10px;
+    }
+
+    .navmenu {
+        width: 100%;
+        padding: 10px 15px;
+        gap: 5px;
+        justify-content: space-between;
+    }
+
+    .navlink,
+    .navlink2,
+    .navlink3,
+    .navlink4 {
+        font-size: 11px;
+    }
+
+    
+    .herocontainer {
+        flex-direction: column;
+        margin-top: 80px;
+        padding: 0 20px;
+    }
+
+    .herocontent {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .herotitle {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .herodesc {
+        text-align: center;
+        width: 100%;
+    }
+
+    .herobuttons {
+        justify-content: center;
+    }
+
+    .herovisual {
+        width: 100%;
+        height: 300px;
+        position: relative;
+    }
+
+    .herostats {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 10px;
+    }
+
+    
+    .bigcard {
+        flex-direction: column !important;
+        
+        height: auto;
+    }
+
+    .bigcardimage {
+        width: 100%;
+        height: 250px;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .bigcardcontent {
+        width: 100%;
+        padding: 25px;
+        text-align: center;
+    }
+
+    .bigcardtitle {
+        font-size: 28px;
+        align-self: center;
+    }
+
+    .bigcardstats {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .bigcardbuttons {
+        justify-content: center;
+    }
+
+    
+    .modelrow {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .modelcard {
+        width: 100%;
+    }
+
+    .modelimage1,
+    .modelimage2 {
+        height: 250px;
+    }
+
+    .modelcontent {
+        padding: 20px;
+    }
+
+    
+    .futuretop {
+        flex-direction: column;
+    }
+
+    .futureleft,
+    .futureright {
+        width: 100%;
+    }
+
+    .futurecar {
+        position: relative;
+        width: 100%;
+        height: 250px;
+        margin: 20px 0;
+    }
+
+    .futurerow {
+        flex-direction: column;
+    }
+
+    .futurecard {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    
+    h1 {
+        font-size: 28px !important;
+    }
+
+    p {
+        font-size: 14px !important;
+    }
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+    .navmenu {
+        gap: 40px;
+        padding: 15px 40px;
+    }
+
+    .herotitle {
+        font-size: 64px;
+    }
+
+    .futurecar {
+        width: 100%;
+        background-position: center;
+        transform: translateX(0);
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    
+    .bigdiv {
+        overflow-x: hidden;
+    }
+
+    
+    .navsection {
+        padding: 10px 0;
+    }
+
+    .navmenu {
+        gap: 15px;
+        padding: 10px 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navlink,
+    .navlink2,
+    .navlink3,
+    .navlink4 {
+        font-size: 14px;
+    }
+
+    
+    .herosection {
+        height: auto;
+        min-height: 100vh;
+        padding: 100px 20px 40px 20px;
+        flex-direction: column;
+    }
+
+    .herocontainer {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .herocontent {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .herotitle {
+        font-size: 48px;
+        color: white;
+    }
+
+    .herodesc {
+        font-size: 16px;
+        color: white;
+    }
+
+    .herobtn2 {
+        color: white;
+    }
+
+    
+    .herovisual {
+        width: 100%;
+        height: 300px;
+        position: relative;
+        right: 0;
+        top: 0;
+    }
+
+    .herostats {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .statitem {
+        width: 30%;
+    }
+
+    .statlabel,
+    .statlabel2,
+    .statlabel3,
+    .statval,
+    .statval2,
+    .statval3 {
+        font-size: 16px;
+    }
+
+    
+    .safetytitle {
+        font-size: 40px;
+    }
+
+    .safetytitle2 {
+        font-size: 24px;
+    }
+
+    
+    .futuresection {
+        padding: 60px 20px;
+    }
+
+    .futuretop {
+        flex-direction: column;
+    }
+
+    .futurecontent {
+        width: 100%;
+        text-align: center;
+        padding-top: 0;
+        z-index: 2;
+        
+    }
+
+    .futurebuttons {
+        justify-content: center;
+    }
+
+    .futurecar {
+        position: relative;
+        
+        width: 100%;
+        height: 300px;
+        top: 0;
+        margin: 40px 0;
+    }
+
+    .futurerow {
+        flex-direction: column;
+    }
+
+    .futurefeature {
+        width: 100%;
+    }
+
+    
+    .modelsection {
+        padding: 60px 20px;
+    }
+
+    
+    .bigcard {
+        flex-direction: column !important;
+        
+        height: auto;
+    }
+
+    .bigcardimage {
+        width: 100%;
+        height: 300px;
+    }
+
+    .bigcardcontent {
+        width: 100%;
+        padding: 40px 20px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .bigcardbuttons {
+        justify-self: center;
+    }
+
+    
+    .modelrow {
+        flex-direction: column;
+    }
+
+    .modelcard {
+        width: 100%;
+    }
+
+    
+    .performrow {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .performcard {
+        width: 100%;
+    }
+
+    .introwrap {
+        flex-direction: column-reverse;
+    }
+
+    .introleft,
+    .introright {
+        width: 100%;
+    }
+
+    .introright {
+        height: 300px;
+        margin-bottom: 30px;
     }
 }

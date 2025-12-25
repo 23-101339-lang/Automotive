@@ -107,7 +107,7 @@ document.getElementById('performvalue2').innerHTML = product.speed;
 document.getElementById('performlabel3').innerHTML = product.rangeLabel;
 document.getElementById('performvalue3').innerHTML = product.range;
 
-// Keep technical specs consistent with main metrics or generic
+
 document.getElementById('spectitle').innerHTML = 'TECHNICAL SPECIFICATIONS';
 document.getElementById('specdesc').innerHTML = 'Engineered for performance, safety, and sustainability. Every detail matters.';
 document.getElementById('specname').innerHTML = '0-100 km/h';
@@ -181,19 +181,19 @@ document.getElementById('legaltext2').innerHTML = 'Terms of Use';
 document.getElementById('legaltext3').innerHTML = 'Cookie Settings';
 
 
-/* --- COLOR PICKER LOGIC --- */
+
 const modelViewer = document.querySelector("#product-model-viewer");
 
-// Colors: Red, Blue, White/Silver, Teal
-// Based on CSS: #E60000, #1C38A0, #E8E8E8, #2A6070
+
+
 
 function switchColor(color) {
     if (!modelViewer || !modelViewer.model) return;
 
-    // Convert logic: 0-255 to 0-1 linear? 
-    // model-viewer baseColorFactor is 0-1 RGBA
+    
+    
 
-    // Loop through materials and find Paint/Body
+    
     for (const material of modelViewer.model.materials) {
         let name = material.name.toLowerCase();
         if (name.includes('paint') || name.includes('body') || name.includes('car_paint') || name.includes('metal')) {
@@ -202,7 +202,7 @@ function switchColor(color) {
     }
 }
 
-document.querySelector('.colordot').onclick = () => switchColor([0.9, 0.0, 0.0, 1.0]); // Red
-document.querySelector('.colordot2').onclick = () => switchColor([0.1, 0.2, 0.6, 1.0]); // Blue
-document.querySelector('.colordot3').onclick = () => switchColor([0.9, 0.9, 0.9, 1.0]); // Silver/White
-document.querySelector('.colordot4').onclick = () => switchColor([0.16, 0.38, 0.44, 1.0]); // Teal
+document.querySelector('.colordot').onclick = () => switchColor([0.9, 0.0, 0.0, 1.0]); 
+document.querySelector('.colordot2').onclick = () => switchColor([0.1, 0.2, 0.6, 1.0]); 
+document.querySelector('.colordot3').onclick = () => switchColor([0.9, 0.9, 0.9, 1.0]); 
+document.querySelector('.colordot4').onclick = () => switchColor([0.16, 0.38, 0.44, 1.0]); 
